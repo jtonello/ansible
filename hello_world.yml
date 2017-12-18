@@ -1,4 +1,4 @@
 - name: Ensure ntp is installed
-  apt:
-    name: {{ntp}}
-    state: present
+  package:
+    name: ntp
+    state: latest
