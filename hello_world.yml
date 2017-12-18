@@ -1,3 +1,4 @@
+---
 - name: install the latest version of ntpd
   package:
     name: ntp
