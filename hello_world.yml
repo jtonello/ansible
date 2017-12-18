@@ -1,6 +1,4 @@
-- name: Hello World Sample
-  hosts: all
-  tasks:
-    - name: Hello Message
-      debug:
-        msg: "Hello there, World!"
+- name: Ensure ntp is installed
+  apt:
+    name: ntp
+    state: present
