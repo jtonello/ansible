@@ -10,3 +10,4 @@
   - name: Install ntp
     apt: name=ntp state=installed 
     tags: ntp
+    become: true
