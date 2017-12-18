@@ -8,5 +8,5 @@
     shell: echo "Hi! Tower is working."
     
   - name: Install ntp
-    service: ntp
-    state: latest
+    apt: name=ntp state=installed 
+    tags: ntp
