@@ -6,3 +6,7 @@
  
   - name: Hello World!
     shell: echo "Hi! Tower is working."
+    
+  - name: Install ntp
+    service: ntp
+    state: latest
