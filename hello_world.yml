@@ -8,7 +8,7 @@
     shell: echo "Hi! Tower is working."
     
   - name: Install ntp
-    sudo: yes
+    become: true
     apt: name=ntp state=installed 
     tags: ntp
 
