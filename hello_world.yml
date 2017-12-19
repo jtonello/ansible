@@ -7,8 +7,8 @@
   - name: Hello World!
     shell: echo "Hi! Tower is working."
     
-  - name: Install ntp
+  - name: Install ntpdate
     become: true
-    apt: name=ntp state=installed 
-    tags: ntp
+    apt: name=ntpdate state=installed 
+    tags: ntpdate
 
