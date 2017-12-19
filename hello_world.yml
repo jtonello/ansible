@@ -7,8 +7,7 @@
   - name: Hello World!
     shell: echo "Hi! Tower is working."
     
-  - name: Install ntpdate
-    become: true
-    apt: name=ntpdate state=installed 
-    tags: ntpdate
+  - name: Install cowsay
+    apt: name=cowsay state=installed 
+    tags: cowsay
 
